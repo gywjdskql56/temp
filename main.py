@@ -56,7 +56,7 @@ serviceKey = 'ojb2HfXlX3ufbp9fOwLMCXOCYljZo9GydOnoG6cGJD3A7caoxtSatynePR5JvP11Gg
 region_cd = pd.read_excel('region_code5.xlsx').drop_duplicates(subset=['code5'])
 region_cd_dict = region_cd.set_index('region')['code5'].to_dict()
 numrow = 10000
-start_yymm = '202301'
+start_yymm = '201001'
 get_data_all(serviceKey, start_yymm, region_cd_dict, numrow)
 
 # # start_yymm = '202301'
